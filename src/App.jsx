@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 import './App.css';
 import './index.css';
 // CHANGE: BrowserRouter instead of HashRouter
@@ -26,7 +27,7 @@ const App = () => {
               <Route path="/skills" element={<Skills />} />
               <Route path="/education" element={<Education />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
