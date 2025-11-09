@@ -3,12 +3,13 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Skills from './components/Skills'
-import Education from './components/Education'
+import Skills from './components/Skills';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 import './index.css';
+// CHANGE: BrowserRouter instead of HashRouter
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
