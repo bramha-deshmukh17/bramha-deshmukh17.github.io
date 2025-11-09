@@ -19,7 +19,7 @@ const Contact = () => {
         },
         {
             label: 'Gmail',
-            href: 'mailto:brammhadeshmukh17@gmail.com',
+            href: 'mailto:work@bramhadeshmukh.me',
             className: 'gmail',
             icon: 'https://cdn.lordicon.com/uufkkpxl.json',
             colors: 'primary:#f24c00,secondary:#e4e4e4'
