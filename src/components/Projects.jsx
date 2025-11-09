@@ -3,7 +3,7 @@ import ShinyText from './Animate/ShinyText';
 import SpotlightCard from './Animate/SpotlightCard';
 
 // Small pulsing red dot shown on live projects
-const LiveDot = () => (
+const LiveDot = (top=false) => (
     <span className="absolute top-2 right-2" title="Live">
         <span className="inline-block w-3 h-3 rounded-full bg-red-500 animate-pulse ring-2 ring-red-400/40" />
         <span title='Live'></span>
@@ -43,17 +43,7 @@ const Projects = () => {
                                         Allows files and media sharing.
                                     </p>
                                     <div className="flex flex-col items-center mt-1">
-                                        <div className="flex items-center">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/lllcnxva.json"
-                                                trigger="hover"
-                                                colors="primary:#121331,secondary:#ebe6ef,tertiary:#000000"
-                                                style={{ width: '45px', height: '45px' }}
-                                            />
-                                            <a href="https://github.com/bramha-deshmukh17/flash_chat" target="_blank" rel="noopener noreferrer" className="ml-2">
-                                                View
-                                            </a>
-                                        </div>
+                                        
                                         <a
                                             href="https://flash-chat-9dt7.onrender.com/"
                                             target="_blank"
