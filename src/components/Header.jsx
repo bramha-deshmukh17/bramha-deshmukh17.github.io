@@ -71,12 +71,12 @@ const Header = () => {
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div className="md:hidden bg-black text-white py-4 space-y-4">
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/')}>About</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/projects')}>Projects</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/experience')}>Experience</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/skills')}>Skills</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/education')}>Education</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/contact')}>Contact</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio')}>About</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio/projects')}>Projects</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio/experience')}>Experience</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio/skills')}>Skills</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio/education')}>Education</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/portfolio/contact')}>Contact</button>
                 </div>
             )}
         </header>
