@@ -10,7 +10,7 @@ const NotFound = () => {
             style={{  backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
         >
             <h1 className="text-6xl font-extrabold" style={{ color: 'red' }}>404</h1>
-            <p className="mt-3 text-lg">We couldn’t find “{pathname}”.</p>
+            <p className="mt-3 text-lg">We couldn't find “{pathname}”.</p>
             <div className="mt-6 flex gap-3">
                 <button
                     className="px-4 py-2 rounded"

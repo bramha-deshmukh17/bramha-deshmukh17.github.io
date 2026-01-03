@@ -25,12 +25,12 @@ const AppContent = () => {
 
       <main className="flex-1">
         <Routes>
-          <Route path="/portfolio" element={<Home />} />
-          <Route path="/portfolio/projects" element={<Projects />} />
-          <Route path="/portfolio/experience" element={<Experience />} />
-          <Route path="/portfolio/skills" element={<Skills />} />
-          <Route path="/portfolio/education" element={<Education />} />
-          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* Isolated Privacy Page */}
           <Route path="/privacy/rupeediary" element={<RupeeDiaryPrivacy />} />
