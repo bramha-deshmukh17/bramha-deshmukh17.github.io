@@ -15,7 +15,7 @@ const NotFound = () => {
                 <button
                     className="px-4 py-2 rounded"
                     style={{ backgroundColor: 'var(--btn-color)', color: 'var(--btn-text)' }}
-                    onClick={() => navigate('/')}
+                    onClick={() => navigate('/portfolio')}
                 >
                     Go Home
                 </button>
