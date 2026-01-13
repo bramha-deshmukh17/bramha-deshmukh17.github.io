@@ -33,7 +33,7 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex justify-center flex-grow space-x-2">
-                    <button type="button" className="px-3 py-2 rounded" onClick={() => go('/')}>About</button>
+                    <button type="button" className="px-3 py-2 rounded" onClick={() => go('/')}>Home</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/skills')}>Skills</button>
@@ -71,7 +71,7 @@ const Header = () => {
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div className="md:hidden bg-black text-white py-4 space-y-4">
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/')}>About</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/')}>Home</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/skills')}>Skills</button>
