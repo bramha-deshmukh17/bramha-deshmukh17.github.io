@@ -1,4 +1,4 @@
-name: Deploy Bramha's Profolio
+name: Deploy Bramha's Portfolio
 
 on:
   push:
