@@ -14,3 +14,29 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.light {
+  --main-heading: #000;
+  --text-color: #000;
+  --btn-color: #5f99be;
+  --btn-text: #fff;
+  --bg-color: #fff;
+  --shadow-color: #999;
+}
+
+.dark {
+  --main-heading: #5f99be;
+  --text-color: #fff;
+  --btn-color: #5f99be;
+  --btn-text: #fff;
+  --bg-color: #1a1a1a;
+  --shadow-color: #000;
+}

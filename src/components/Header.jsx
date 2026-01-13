@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaLightbulb } from "react-icons/fa";
-import '../css/Header.css';
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {

@@ -1,5 +1,3 @@
-import '../css/Experience.css';
-
 
 const Experience = () => {
     return (

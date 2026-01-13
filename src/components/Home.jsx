@@ -1,4 +1,3 @@
-import '../css/Home.css'
 import GradientText from './Animate/GradientText'
 import ShinyText from './Animate/ShinyText';
 import SpotlightCard from './Animate/SpotlightCard';

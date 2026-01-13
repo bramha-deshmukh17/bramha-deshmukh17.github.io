@@ -1,4 +1,3 @@
-import '../css/Skills.css';
 import SpotlightCard from './Animate/SpotlightCard';
 import {
     FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare,

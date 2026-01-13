@@ -1,4 +1,3 @@
-import '../css/Education.css'
 import SpotlightCard from './Animate/SpotlightCard';
 
 const Education = () => {

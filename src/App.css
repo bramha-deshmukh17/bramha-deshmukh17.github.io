@@ -1,25 +1,77 @@
-#root {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0;
+/*Header css*/
+header {
   background-color: var(--bg-color);
+}
+
+nav {
+  color: var(--main-heading);
+}
+
+nav div a {
+  font-size: 18px;
+}
+
+nav div a:hover {
+  text-decoration: underline;
+}
+
+/* education*/
+#education {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: calc(100vh - 30vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*experience*/
+#experience {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  min-height: calc(100vh - 30vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*home*/
+#home {
+  text-align: justify;
+  background-color: var(--bg-color);
+
+  /* fill between header and footer */
+  min-height: calc(100vh - 30vh);
+
+  /* let Tailwind classes control layout; avoid horizontal overflow */
+  overflow-x: hidden;
+}
+
+.right {
+  cursor: default;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 5px var(--shadow-color);
+}
+
+#home h2 {
+  color: var(--main-heading);
+}
+
+#home p {
   color: var(--text-color);
 }
 
-.light{
-  --main-heading: #000;
-  --text-color: #000;
-  --btn-color: #5f99be;
-  --btn-text: #fff;
-  --bg-color: #fff;
-  --shadow-color: #999;
-}
+/*skills*/
 
-.dark{
-  --main-heading: #5f99be;
-  --text-color: #fff;
-  --btn-color: #5f99be;
-  --btn-text: #fff;
-  --bg-color: #1a1a1a;
-  --shadow-color: #000;
+#skills {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  user-select: none;
 }
