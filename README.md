@@ -11,7 +11,7 @@
 # 🌐 Portfolio Website
 
 A modern and responsive portfolio website built using the **MERN stack** and modern frontend tools.
-Live on [bramhaDeshmukh.me](https://www.bramhadeshmukh.me/).
+Live on [bramhadeshmukh.me](https://www.bramhadeshmukh.me/).
 ---
 
 ## Table of Contents
