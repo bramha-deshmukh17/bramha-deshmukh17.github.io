@@ -1,4 +1,4 @@
-name: Deploy Bramha's Profolio
+name: Deploy Portfolio (User Page)
 
 on:
   push:
@@ -6,11 +6,12 @@ on:
       - main
 
 permissions:
-  contents: write  # Crucial: This allows the action to push to the gh-pages branch
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,17 +20,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Build and Deploy
-        run: |
-          npm run build
-          # This runs your package.json script
-          # Note: gh-pages needs a git identity to commit
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npm run deploy 
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
