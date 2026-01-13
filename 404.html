@@ -1,20 +1,36 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; url=/?p=%2F">
-    <script>
-        // Build redirect to root with original path in ?p=
-        (function () {
-            var l = window.location;
-            var target = '/?p=' + encodeURIComponent(l.pathname + l.search + l.hash);
-            l.replace(target);
-        })();
-    </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/ico" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script>
+    // GH Pages SPA: if redirected with ?p=..., restore the real path
+    (function () {
+      var q = window.location.search;
+      if (q.startsWith('?p=')) {
+        var target = decodeURIComponent(q.slice(3));
+        window.history.replaceState(null, '', target);
+      }
+    })();
+  </script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-BcaCT42e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CiKJLl2e.css">
 </head>
 
-<body></body>
+<body class="dark">
+  <div id="root" style="padding: 0 !important;margin:0 !important;"></div>
+</body>
 
 </html>
