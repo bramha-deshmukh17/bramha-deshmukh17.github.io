@@ -39,7 +39,7 @@ const Contact = () => {
                             rel="noopener noreferrer"
                             className={`contact-card ${card.className}`}
                         >
-                            <span className="icon-wrap">
+                            <span className="icon-wrap" style={{ backgroundColor: "#1a1a1a" }}>
                                 <lord-icon
                                     src={card.icon}
                                     trigger="hover"
@@ -57,7 +57,7 @@ const Contact = () => {
                         onClick={() => window.open('./bramha_deshmukh_resume.pdf', '_blank')}
                         title="Open Resume"
                     >
-                        <span className="icon-wrap" aria-hidden="true">
+                        <span className="icon-wrap" aria-hidden="true" style={{ backgroundColor: "#1a1a1a" }}>
                             <lord-icon
                                 src="https://cdn.lordicon.com/fjvfsqea.json"
                                 trigger="hover"
@@ -66,7 +66,7 @@ const Contact = () => {
                             />
                         </span>
                         <span className="label">
-                            <ShinyText text="Resume" disabled={false} speed={1} className="home" />
+                            Resume
                         </span>
                     </button>
                 </div>

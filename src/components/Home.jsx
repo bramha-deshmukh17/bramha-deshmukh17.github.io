@@ -20,7 +20,7 @@ const Home = () => {
                     >
                         BRAMHA DESHMUKH
                     </GradientText>
-                    <ShinyText text="Developer" disabled={false} speed={1} className="home" />
+                    <ShinyText text="Developer" speed={1} className="home" />
                 </div>
             </div>
 

@@ -33,6 +33,7 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex justify-center flex-grow space-x-2">
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/')}>Home</button>
+                    <button type="button" className="px-3 py-2 rounded" onClick={() => window.open('https://labs.bramhadeshmukh.me/', "_blank")}>Labs</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/skills')}>Skills</button>
@@ -69,8 +70,9 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-black text-white py-4 space-y-4">
+                <div className="md:hidden text-white py-4 space-y-4" style={{ backgroundColor: "var(--bg-color)", color:"var(--text-color)"}}>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/')}>Home</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => window.open('https://labs.bramhadeshmukh.me/', "_blank")}>Labs</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/skills')}>Skills</button>

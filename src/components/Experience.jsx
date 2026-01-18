@@ -24,9 +24,11 @@ const Experience = () => {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center"
                                 style={{
-                                    backgroundColor: "transparent",
+                                    backgroundColor: "#1a1a1a",
                                     boxShadow: "none",
-                                    color: "var(--btn-color)"
+                                    color: "var(--btn-color)",
+                                    borderRadius: "8px",
+                                    padding: "5px 3px 5px 5px",
                                 }}
                                 title='View Certificate'
                             >
@@ -36,7 +38,6 @@ const Experience = () => {
                                     colors="primary:#e4e4e4,secondary:#3b82f6"
                                     style={{ width: '25px', height: '25px', backgroundColor: 'transparent' }}
                                 />
-                                <span className="ml-1">Certificate</span>
                             </a>
                         </div>
                         <p className="mb-2">

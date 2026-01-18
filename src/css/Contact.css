@@ -79,6 +79,7 @@
 
 .contact-card.resume:hover {
     box-shadow: 0 18px 40px -18px rgba(234, 179, 8, .55);
+    text-decoration: underline;
 }
 
 /* allow button variant */

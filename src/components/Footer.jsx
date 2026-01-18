@@ -10,7 +10,7 @@ const Footer = () => {
             className="border-t py-3"
             style={{
                 backgroundColor: '#000',
-                color: 'var(--text-color)',
+                color: '#fff',
                 borderColor: 'rgba(255,255,255,0.08)',
             }}
         >
@@ -19,7 +19,8 @@ const Footer = () => {
                 {/* Mobile: quick links + copyright */}
                 <div className="md:hidden">
                     <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
-                        <button type="button" className="hover:underline" onClick={() => navigate('/')}>About</button>
+                        <button type="button" className="hover:underline" onClick={() => navigate('/')}>Home</button>
+                        <button type="button" className="hover:underline" onClick={() => window.open('https://labs.bramhadeshmukh.me/', "_blank")}>Labs</button>
                         <button type="button" className="hover:underline" onClick={() => navigate('/projects')}>Projects</button>
                         <button type="button" className="hover:underline" onClick={() => navigate('/experience')}>Experience</button>
                         <button type="button" className="hover:underline" onClick={() => navigate('/skills')}>Skills</button>
