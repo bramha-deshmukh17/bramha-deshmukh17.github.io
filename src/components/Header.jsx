@@ -33,7 +33,7 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex justify-center flex-grow space-x-2">
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/')}>Home</button>
-                    <button type="button" className="px-3 py-2 rounded" onClick={() => window.open('https://labs.bramhadeshmukh.me/', "_blank")}>Labs</button>
+                    <button type="button" className="px-3 py-2 rounded" onClick={() => window.open('https://lab.bramhadeshmukh.me/', "_blank")}>Labs</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="px-3 py-2 rounded" onClick={() => go('/skills')}>Skills</button>
