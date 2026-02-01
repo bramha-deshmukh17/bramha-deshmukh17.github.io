@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div className="App min-h-screen flex flex-col">
       <ErrorBoundary>
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
           <AppContent />
         </Router>
       </ErrorBoundary>

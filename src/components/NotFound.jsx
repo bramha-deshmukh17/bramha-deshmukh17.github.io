@@ -7,7 +7,7 @@ const NotFound = () => {
     return (
         <section
             className="mt-10 pt-10 flex flex-col items-center justify-center text-center"
-            style={{  backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
+            style={{ backgroundColor: 'var(--bg-color)', color: 'var(--text-color)' }}
         >
             <h1 className="text-6xl font-extrabold" style={{ color: 'red' }}>404</h1>
             <p className="mt-3 text-lg">We couldn't find “{pathname}”.</p>
@@ -15,7 +15,7 @@ const NotFound = () => {
                 <button
                     className="px-4 py-2 rounded"
                     style={{ backgroundColor: 'var(--btn-color)', color: 'var(--btn-text)' }}
-                    onClick={() => navigate('/portfolio')}
+                    onClick={() => navigate('/')}
                 >
                     Go Home
                 </button>

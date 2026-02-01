@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { FaLightbulb } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
+const withBase = (p) => `${import.meta.env.BASE_URL}${p.replace(/^\/+/, '')}`;
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [theme, setTheme] = useState("dark");
@@ -25,7 +27,7 @@ const Header = () => {
                 {/* Logo Section */}
                 <div className="flex items-center space-x-2">
                     <button type="button" onClick={() => go('/')} className="flex items-center space-x-2">
-                        <img src="me.jpg" alt="Logo" className="h-12 w-12 rounded-full" />
+                        <img src={withBase('me.jpg')} alt="Logo" className="h-12 w-12 rounded-full" />
                         <span className="text-xl font-semibold">Portfolio</span>
                     </button>
                 </div>

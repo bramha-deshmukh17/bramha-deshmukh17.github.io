@@ -23,11 +23,13 @@ const LiveDot = () => (
     </span>
 );
 
+const withBase = (p) => `${import.meta.env.BASE_URL}${p.replace(/^\/+/, '')}`;
+
 const fullstackProjects = [
     {
         title: 'Flash Chat',
         description: 'a chatting app',
-        img: './projects/flash_chat.png',
+        img: withBase('projects/flash_chat.png'),
         alt: 'Flash Chat',
         tech: 'MERN',
         imgClass: 'h-16/9',
@@ -41,7 +43,7 @@ const fullstackProjects = [
     {
         title: 'Rupee Diary',
         description: 'an expense tracker app',
-        img: './projects/rupee_diary.png',
+        img: withBase('projects/rupee_diary.png'),
         alt: 'Rupee Diary',
         tech: 'Flutter',
         imgClass: 'h-16/9',
@@ -59,7 +61,7 @@ const fullstackProjects = [
     {
         title: 'Smart RTO',
         description: 'a RTO mobile app',
-        img: './projects/rto.jpg',
+        img: withBase('projects/rto.jpg'),
         alt: 'Smart RTO',
         tech: 'Flutter',
         imgClass: 'h-full',
@@ -73,25 +75,21 @@ const fullstackProjects = [
     {
         title: 'TourGuide',
         description: 'a guide booking website',
-        img: './projects/tourguide.png',
+        img: withBase('projects/tourguide.png'),
         alt: 'TourGuide',
         tech: 'Django',
         imgClass: 'h-16/9',
-        features: [
-            'The TourGuide aims to provide a comprehensive platform for tourists to book guides and explore tourist places, restaurants, and hotels.',
-        ],
+        features: ['The TourGuide aims to provide a comprehensive platform for tourists to book guides and explore tourist places, restaurants, and hotels.'],
         repoUrl: 'https://github.com/bramha-deshmukh17/tourguide',
     },
     {
         title: 'EduMate',
         description: 'an e-learning website',
-        img: './projects/edumate.png',
+        img: withBase('projects/edumate.png'),
         alt: 'EduMate',
         tech: 'PHP',
         imgClass: 'h-16/9',
-        features: [
-            'With its 3 distinct modules - Student Module, Admin Module, Discussion Forum - the platform provides a comprehensive and user-friendly environment for effective learning, efficient course management, and engaging discussions.',
-        ],
+        features: ['With its 3 distinct modules - Student Module, Admin Module, Discussion Forum - the platform provides a comprehensive and user-friendly environment for effective learning, efficient course management, and engaging discussions.'],
         repoUrl: 'https://github.com/bramha-deshmukh17/edumate',
     },
 ];
@@ -100,13 +98,11 @@ const otherProjects = [
     {
         title: 'Calculator',
         description: 'a web app',
-        img: './projects/calculator.png',
+        img: withBase('projects/calculator.png'),
         alt: 'Calculator',
         tech: 'HTML CSS JavaScript',
         imgClass: 'h-16/9',
-        features: [
-            'A simple calculator web app that performs basic arithmetic operations like addition, subtraction, division and multiplication.',
-        ],
+        features: ['A simple calculator web app that performs basic arithmetic operations like addition, subtraction, division and multiplication.'],
         liveUrl: 'https://calculator.bramhadeshmukh.me/',
     },
 ];
@@ -142,7 +138,7 @@ const ProjectCard = ({ p }) => {
                             <b>
                                 <ShinyText text={p.tech} speed={1} className="code" /><br />
                                 {p.title} is {p.description ?? 'a project'} built using {p.tech}
-                                
+
                             </b>
                             <br />
 
