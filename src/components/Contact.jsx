@@ -51,24 +51,6 @@ const Contact = () => {
                         </a>
                     ))}
 
-                    <button
-                        type="button"
-                        className="contact-card resume"
-                        onClick={() => window.open('./bramha_deshmukh_resume.pdf', '_blank')}
-                        title="Open Resume"
-                    >
-                        <span className="icon-wrap" aria-hidden="true" style={{ backgroundColor: "#1a1a1a" }}>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/fjvfsqea.json"
-                                trigger="hover"
-                                colors="primary:#e4e4e4,secondary:#3b82f6"
-                                style={{ width: '25px', height: '25px', backgroundColor: 'transparent' }}
-                            />
-                        </span>
-                        <span className="label">
-                            Resume
-                        </span>
-                    </button>
                 </div>
             </div>
         </section>

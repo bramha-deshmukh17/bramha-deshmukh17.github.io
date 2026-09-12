@@ -62,6 +62,30 @@ const Experience = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="experience-item flex flex-col md:flex-row rounded-lg shadow-lg p-5 mb-6"
+                    style={{
+                        backgroundColor: "var(--bg-color)",
+                        boxShadow: "10px 10px 20px var(--shadow-color)",
+                        color: "var(--text-color)"
+                    }}
+                >
+                    {/* Left Section */}
+                    <div className="w-full md:w-1/3 flex flex-col justify-center items-start">
+                        <div className="flex items-center gap-2 mb-1">
+                            <h3 className="text-xl font-semibold" style={{ color: "var(--main-heading)" }}>
+                                Trainee Software Developer
+                            </h3>
+                        </div>
+                        <p className="mb-2">
+                            zCon Solutions
+                        </p>
+                        <span className="text-sm font-medium">
+                            March 2026 - Present
+                        </span>
+                    </div>
+
+                </div>
             </div>
         </section>
     );
