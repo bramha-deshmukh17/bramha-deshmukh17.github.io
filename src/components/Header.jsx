@@ -74,7 +74,7 @@ const Header = () => {
             {isMenuOpen && (
                 <div className="md:hidden text-white py-4 space-y-4" style={{ backgroundColor: "var(--bg-color)", color:"var(--text-color)"}}>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/')}>Home</button>
-                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => window.open('https://labs.bramhadeshmukh.me/', "_blank")}>Labs</button>
+                    <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => window.open('https://lab.bramhadeshmukh.me/', "_blank")}>Labs</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/projects')}>Projects</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/experience')}>Experience</button>
                     <button type="button" className="block px-4 py-2 w-full text-left" onClick={() => go('/skills')}>Skills</button>
